@@ -1,6 +1,6 @@
 <template>
   <main
-    class="flex items-center container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+    class="flex-grow flex items-center container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
   >
     <div class="mx-0 md:mx-8 px-4 py-6 sm:px-0 flex-nowrap md:flex gap-4">
       <div class="md:w-1/2 w-full ">
