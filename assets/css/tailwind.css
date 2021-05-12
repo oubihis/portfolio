@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "Karla", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+}
+@font-face {
+  font-family: "Karla", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+}
+.dark-mode {
+  --color: #ebf4f1;
+  --color-primary: #ffffff;
+  --color-secondary: #eaaee0;
+  --color-bg-text: #7f308e;
+  --bg: #1d2029;
+  --bg-secondary: #071521;
+  --border-color: #0d2538;
+  font-weight: 600;
+}
+
+.light-mode {
+  --color: #243746;
+  --color-primary: #1d2029;
+  --color-secondary: #05719d;
+  --color-bg-text: #ffe365;
+  --bg: #f3f5f4;
+  --bg-secondary: rgb(41, 35, 35);
+  --border-color: #ddd;
+  font-weight: 600;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--color);
+  transition: background-color 500ms;
+}
+
+.toggle {
+  --size: 2rem;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  width: var(--size);
+  height: var(--size);
+  box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
+  border-radius: 999px;
+  color: #f3f5f4;
+  transition: all 500ms;
+}
+.toggle:checked {
+  --ray-size: calc(var(--size) * -0.4);
+  --offset-orthogonal: calc(var(--size) * 0.65);
+  --offset-diagonal: calc(var(--size) * 0.45);
+  transform: scale(0.75);
+  color: #ffaa00;
+  box-shadow: inset 0 0 0 var(--size),
+    calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
+    var(--offset-orthogonal) 0 0 var(--ray-size),
+    0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size),
+    0 var(--offset-orthogonal) 0 var(--ray-size),
+    calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0
+      var(--ray-size),
+    var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size),
+    calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
+    var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bg-mobile {
+    background-color: var(--bg);
+  }
+  .link {
+    @apply ml-4 text-lg focus:outline-none font-normal hover:opacity-75;
+    font-family: "Karla", sans-serif;
+    color: var(--color-primary);
+  }
+  .link-first {
+    @apply text-lg focus:outline-none hover:opacity-75 font-normal;
+    font-family: "Karla", sans-serif;
+    color: var(--color-primary);
+  }
+  .link-mobile-first {
+    @apply block text-lg focus:outline-none hover:opacity-75;
+    font-family: "Karla", sans-serif;
+  }
+  .link-mobile {
+    @apply block text-lg focus:outline-none hover:opacity-75 mt-4;
+    font-family: "Karla", sans-serif;
+  }
+  .about-me {
+    @apply text-xl md:text-3xl lg:text-4xl font-bold tracking-normal leading-6 md:leading-10 mb-6 md:mb-0;
+    font-family: "Karla", sans-serif;
+    color: var(--color-primary);
+  }
+  .about-me span {
+    color: var(--color-secondary);
+  }
+  .m-code {
+    @apply text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold tracking-tight mb-3 md:mb-5;
+    font-family: "Karla", sans-serif;
+    color: var(--color-primary);
+  }
+  .samthing-me {
+    @apply text-sm md:text-base lg:text-lg font-light leading-5 md:leading-6 mb-5;
+    font-family: "Karla", sans-serif;
+    color: var(--color-primary);
+  }
+  .samthing-me span {
+    @apply px-1;
+    background-color: var(--color-bg-text);
+  }
+  .heart {
+    @apply mx-1 px-2 h-3 w-3 md:h-4 md:w-4;
+    background: url(~assets/img/heart.png) no-repeat;
+  }
+  .icon-social {
+    @apply fill-current h-8 w-8;
+    color: var(--color-primary);
+  }
+  .icon-social-back {
+    color: var(--bg);
+  }
+  .copyright {
+    @apply text-sm md:text-base font-light flex items-center md:ml-6;
+    font-family: "Karla", sans-serif;
+  }
+  .h-project {
+    @apply text-base md:text-xl font-medium mb-5;
+    font-family: "Karla", sans-serif;
+    color: var(--color-primary);
+  }
+  .link-b-project {
+    @apply text-base md:text-xl font-medium tracking-tight flex gap-x-10;
+    font-family: "Karla", sans-serif;
+    color: var(--color-primary);
+  }
+  .not-found {
+    @apply text-xl md:text-3xl lg:text-4xl font-bold tracking-normal mb-6 md:mb-0;
+    font-family: "Karla", sans-serif;
+    color: var(--color-primary);
+  }
+  .not-found span {
+    @apply leading-8 font-medium;
+    color: var(--color-secondary);
+  }
+  .link-back-to {
+    @apply text-base md:text-xl font-medium tracking-tight flex my-3;
+    font-family: "Karla", sans-serif;
+    color: var(--color-primary);
+  }
+  .icon-404 {
+    @apply fill-current h-32 w-32 mx-auto;
+    color: var(--color-primary);
+  }
+  /* project */
+  .card-chezpapyetmamie {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/chezpapyetmamie.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-alkwatar {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/alkawtar.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-dakatir {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/dakatir.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-e3cortex {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/e3rotex.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-cadastresolaire {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/cadastresolaire.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-brulerie-meaux {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/brulerie-meaux.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-compagnon-froid {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/compagnon-froid.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-doctori {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/doctori.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-sofprim {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/sofprim.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-social-clean {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/social-clean.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-travel-marrakech {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/travel-marrakech.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-weather-widget {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/weather-widget.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-viralebom {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/viralebom.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-alfissah {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/alfissah.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-store-bts {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/store-bts.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-login-ux {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/login-ux.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-cv19mr {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/cv19mr.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
