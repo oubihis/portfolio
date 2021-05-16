@@ -6,14 +6,14 @@
       class="grid gap-4 md:row-gap-10 md:col-gap-4 md:grid-cols-2 lg:grid-cols-3"
     >
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/al-kwatar">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
             <div class="card-alkwatar"></div>
             <div class="absolute z-20 pointer-events-none p-6">
               <h2 class="text-base text-white">
-                al-kwatar
+                Al-kwatar
               </h2>
               <p class="mt-2 text-xs text-white font-light">
                 <span>Wordpress</span>
@@ -26,7 +26,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/e3cortex">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -46,7 +46,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/cadastresolaire">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -66,7 +66,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/dakatir">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -86,7 +86,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/brulerie-meaux">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -106,7 +106,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/lescompagnonsdufroid">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -126,7 +126,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/chezpapyetmamie">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -146,7 +146,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/doctori">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -166,7 +166,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/sofprim">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -186,14 +186,14 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="#">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
             <div class="card-social-clean"></div>
             <div class="absolute z-20 pointer-events-none p-6">
               <h2 class="text-base text-white">
-                Social Clean
+                Social Clean <span class="text-xs py-1 px-2 bg-red-500 rounded-full"> *Soon </span>
               </h2>
               <p class="mt-2 text-xs text-white font-light">
                 <span>TailwindCss 1.9</span>
@@ -204,7 +204,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/travel-to-marrakech">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -224,7 +224,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/weather-widget">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -244,7 +244,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/viralebom">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -264,7 +264,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/alfissah">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -284,7 +284,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/store-bts">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -304,7 +304,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/login-ux">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -322,7 +322,7 @@
       </div>
 
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/cv19mr">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
@@ -350,9 +350,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Home page description'
+        content: 'My Projects'
       }
     ],
-  }
+  },
+  middleware: ['linksRedirect']
 }
 </script>
