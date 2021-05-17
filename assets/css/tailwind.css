@@ -68,6 +68,32 @@ body {
     var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
 }
 
+.github-corner svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scale(-1, -1)
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave .56s;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-20deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
