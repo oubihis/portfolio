@@ -14,15 +14,15 @@
       <div class="md:w-1/2 w-full ">
         <h2 class="m-code">#Coding & more coding</h2>
         <p class="samthing-me">
-          in 2013 I enjoy creating things that live on web,
-          some of my working is open source available on <a href="https://github.com/oubihis" target="_blank">
-          <span class="italic">GitHub.</span></a> or you can just check <nuxt-link class="link-first" to="/projects">
+          I began my career adventure in 2013. I enjoy designing mock-ups and bringing them to life using different tools.
+           Also, I like spending my free time working on Open Source Projects which are available on <a href="https://github.com/oubihis" target="_blank">
+          <span class="italic">GitHub</span></a> or you can just check <nuxt-link class="link-first" to="/projects">
           <span class="italic">My Projects.</span></nuxt-link>
         </p>
         <h3 class="h-project">Have a project in mind ?</h3>
         <div class="link-b-project">
-          <nuxt-link class="link-first" to="/projects">What i do ?</nuxt-link>
-          <a href="mailto:oubihis@gmail.com">Hire me !</a>
+          Feel free to send me an <a href="mailto:oubihis@gmail.com">
+            <span class="italic font-thin">email !</span></a>
         </div>
       </div>
     </div>

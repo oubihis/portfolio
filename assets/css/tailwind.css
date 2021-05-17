@@ -15,6 +15,8 @@
   --bg-secondary: #071521;
   --border-color: #0d2538;
   font-weight: 600;
+  --bg-github: #f3f5f4;
+  --color-github: #1d2029;
 }
 
 .light-mode {
@@ -26,6 +28,8 @@
   --bg-secondary: rgb(41, 35, 35);
   --border-color: #ddd;
   font-weight: 600;
+  --bg-github: #1d2029;
+  --color-github: #f3f5f4;
 }
 
 body {
@@ -69,6 +73,10 @@ body {
 @tailwind utilities;
 
 @layer components {
+  .github-corner svg {
+    fill: var(--bg-github);
+    color: var(--color-github);
+  }
   .bg-mobile {
     background-color: var(--bg);
   }
@@ -133,9 +141,13 @@ body {
     color: var(--color-primary);
   }
   .link-b-project {
-    @apply text-base md:text-xl font-medium tracking-tight flex gap-x-10;
+    @apply text-base md:text-xl font-medium tracking-tight;
     font-family: "Karla", sans-serif;
     color: var(--color-primary);
+  }
+  .link-b-project span {
+    @apply px-1;
+    background-color: var(--color-bg-text);
   }
   .not-found {
     @apply text-xl md:text-3xl lg:text-4xl font-bold tracking-normal mb-6 md:mb-0;
