@@ -71,7 +71,6 @@ body {
 .github-corner svg {
   position: absolute;
   left: 0;
-  bottom: 0;
   transform: scale(-1, -1)
 }
 
