@@ -63,4 +63,8 @@ export default function(ctx) {
   if(ctx.route.fullPath == '/cv19mr' || ctx.route.fullPath == '/cv19mr/') {
     return ctx.redirect(301, 'https://www.behance.net/gallery/94929225/Coronavirus-Morocco-Arabic')
   }
+  // greenh2
+  if(ctx.route.fullPath == '/greenh2' || ctx.route.fullPath == '/greenh2/') {
+    return ctx.redirect(301, 'https://greenh2.ma')
+  }
 }

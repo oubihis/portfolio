@@ -26,6 +26,46 @@
       </div>
 
       <div>
+        <nuxt-link to="#">
+          <div
+            class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
+          >
+            <div class="card-weskills"></div>
+            <div class="absolute z-20 pointer-events-none p-6">
+              <h2 class="text-base text-white">
+                Weskills <span class="text-xs py-1 px-2 bg-red-500 rounded-full"> *Soon </span>
+              </h2>
+              <p class="mt-2 text-xs text-white font-light">
+                <span>Wordpress</span>
+                -
+                <span>Css - Php - javascript</span>
+              </p>
+            </div>
+          </div>
+        </nuxt-link>
+      </div>
+
+      <div>
+        <nuxt-link to="/greenh2">
+          <div
+            class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
+          >
+            <div class="card-greenh2"></div>
+            <div class="absolute z-20 pointer-events-none p-6">
+              <h2 class="text-base text-white">
+                Greenh2
+              </h2>
+              <p class="mt-2 text-xs text-white font-light">
+                <span>Template Html/Css</span>
+                -
+                <span>Css - Html - javascript</span>
+              </p>
+            </div>
+          </div>
+        </nuxt-link>
+      </div>
+
+      <div>
         <nuxt-link to="/e3cortex">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"

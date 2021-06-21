@@ -47,7 +47,7 @@ body {
   height: var(--size);
   box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
   border-radius: 999px;
-  color: #f3f5f4;
+  color:#525252;
   transition: all 500ms;
 }
 .toggle:checked {
@@ -202,6 +202,18 @@ body {
   .card-alkwatar {
     @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
     background: url(~assets/projects/alkawtar.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-weskills {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/weskills.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-greenh2 {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/greenh2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
   }
