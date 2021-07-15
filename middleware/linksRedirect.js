@@ -1,4 +1,8 @@
 export default function(ctx) {
+  // GreenMDM
+  if(ctx.route.fullPath == '/greenmdm' || ctx.route.fullPath == '/greenmdm/') {
+    return ctx.redirect(301, 'https://greenmdm.ma')
+  }
   // Al-kwatar
   if(ctx.route.fullPath == '/al-kwatar' || ctx.route.fullPath == '/al-kwatar/') {
     return ctx.redirect(301, 'https://al-kwatar.sensass.fr')

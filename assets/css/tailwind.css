@@ -193,6 +193,12 @@ body {
     color: var(--color-primary);
   }
   /* project */
+  .card-greenmdm {
+    @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
+    background: url(~assets/projects/greenmdm.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
   .card-chezpapyetmamie {
     @apply rounded-lg h-full w-full absolute z-10 hover:opacity-50 transition-all duration-500 ease-in-out;
     background: url(~assets/projects/chezpapyetmamie.jpg) no-repeat;
