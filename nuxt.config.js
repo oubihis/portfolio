@@ -26,7 +26,7 @@ export default {
   // Google Analytics
   googleAnalytics: {
     id: 'UA-202498549-1'
-  }
+  },
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
