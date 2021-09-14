@@ -71,4 +71,8 @@ export default function(ctx) {
   if(ctx.route.fullPath == '/greenh2' || ctx.route.fullPath == '/greenh2/') {
     return ctx.redirect(301, 'https://greenh2.ma')
   }
+  // Adidas
+  if(ctx.route.fullPath == '/adidas' || ctx.route.fullPath == '/adidas/') {
+    return ctx.redirect(301, 'https://adidas.co.ma')
+  }
 }

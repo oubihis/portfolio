@@ -6,7 +6,7 @@
       class="grid gap-4 md:row-gap-10 md:col-gap-4 md:grid-cols-2 lg:grid-cols-3"
     >
       <div>
-        <nuxt-link to="https://adidas.co.ma">
+        <nuxt-link to="/adidas">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
