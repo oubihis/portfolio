@@ -6,6 +6,24 @@
       class="grid gap-4 md:row-gap-10 md:col-gap-4 md:grid-cols-2 lg:grid-cols-3"
     >
       <div>
+        <nuxt-link to="#">
+          <div
+            class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
+          >
+            <div class="card-adidas"></div>
+            <div class="absolute z-20 pointer-events-none p-6">
+              <h2 class="text-base text-white">
+                Adidas Emails
+              </h2>
+              <p class="mt-2 text-xs text-white font-light">
+                <span>Emails</span>
+              </p>
+            </div>
+          </div>
+        </nuxt-link>
+      </div>
+
+      <div>
         <nuxt-link to="/greenmdm">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
