@@ -17,6 +17,8 @@
               </h2>
               <p class="mt-2 text-xs text-white font-light">
                 <span>Emails</span>
+                -
+                <span>Adidas Morocco</span>
               </p>
             </div>
           </div>
