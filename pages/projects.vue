@@ -266,24 +266,6 @@
       </div>
 
       <div>
-        <nuxt-link to="#">
-          <div
-            class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
-          >
-            <div class="card-social-clean"></div>
-            <div class="absolute z-20 pointer-events-none p-6">
-              <h2 class="text-base text-white">
-                Social Clean <span class="text-xs py-1 px-2 bg-red-500 rounded-full"> *Soon </span>
-              </h2>
-              <p class="mt-2 text-xs text-white font-light">
-                <span>TailwindCss 1.9</span>
-              </p>
-            </div>
-          </div>
-        </nuxt-link>
-      </div>
-
-      <div>
         <nuxt-link to="/travel-to-marrakech">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
