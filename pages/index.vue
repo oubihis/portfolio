@@ -6,7 +6,7 @@
       <div class="md:w-1/2 w-full ">
         <h2 class="about-me">
           Hey...! <br />
-          I’am <span>Saïd Oubihi, aka Oubihis</span>. <br />UI/Front-end Developer from<br />
+          I’am <span>Saïd Oubihi, aka Oubihis</span>. <br />Senior Developer from<br />
           Morocco.
         </h2>
         <hr class="mt-8 w-16" />
