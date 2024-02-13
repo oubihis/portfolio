@@ -66,7 +66,7 @@
       </div>
 
       <div>
-        <nuxt-link to="#">
+        <nuxt-link to="/weskills">
           <div
             class="relative bg-black shadow-lg rounded-lg group h-80 w-full flex justify-start items-start"
           >
