@@ -15,6 +15,10 @@ export default function(ctx) {
   if(ctx.route.fullPath == '/cadastresolaire' || ctx.route.fullPath == '/cadastresolaire/') {
     return ctx.redirect(301, 'http://cadastresolaire.developpement.top')
   }
+  // weskills.pro
+  if(ctx.route.fullPath == '/weskills' || ctx.route.fullPath == '/weskills/') {
+    return ctx.redirect(301, 'https://weskills.pro')
+  }
   // Dakatir
   if(ctx.route.fullPath == '/dakatir' || ctx.route.fullPath == '/dakatir/') {
     return ctx.redirect(301, 'https://dakatir.com')
